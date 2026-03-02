@@ -1,0 +1,87 @@
+:root {
+    --color-primary: #c68ffa;
+    --color-secondary: #6c757d;
+    --color-background: #f8f9fa;
+    --color-border: #dee2e6;
+
+    --color-primary-dark: #0056b3;
+    --color-secondary-dark: #343a40;
+    --color-background-dark: #212529;
+    --color-border-dark: #495057;
+
+    --color-text: #000000;
+    --color-text-dark: #f8f9fa;
+
+    --color-header: #343a40;
+    --color-header-dark: #f8f9fa;
+
+    --color-sidebar: #f0f0f0;
+    --color-sidebar-dark: #343a40;
+
+    --color-main: #ffffff;
+    --color-main-dark: #212529;
+
+    --color-footer: #e9ecef;
+    --color-footer-dark: #343a40;
+
+    --color-button-primary: #007bff;
+    --color-button-primary-hover: #0056b3;
+    --color-button-primary-active: #004085;
+    --color-button-secondary: #6c757d;
+    --color-button-secondary-hover: #5a6268;
+    --color-button-secondary-active: #343a40;
+
+    --color-button-primary-dark: #007bff;
+    --color-button-primary-hover-dark: #0056b3;
+    --color-button-primary-active-dark: #004085;
+    --color-button-secondary-dark: #6c757d;
+    --color-button-secondary-hover-dark: #5a6268;
+    --color-button-secondary-active-dark: #343a40;
+}
+
+[data-theme="dark"] {
+    --color-primary: var(--color-primary-dark);
+    --color-secondary: var(--color-secondary-dark);
+    --color-background: var(--color-background-dark);
+    --color-border: var(--color-border-dark);
+
+    --color-text: var(--color-text-dark);
+    --color-header: var(--color-header-dark);
+    --color-sidebar: var(--color-sidebar-dark);
+    --color-main: var(--color-main-dark);
+    --color-footer: var(--color-footer-dark);
+
+    --color-button-primary: var(--color-button-primary-dark);
+    --color-button-primary-hover: var(--color-button-primary-hover-dark);
+    --color-button-primary-active: var(--color-button-primary-active-dark);
+
+    --color-button-secondary: var(--color-button-secondary-dark);
+    --color-button-secondary-hover: var(--color-button-secondary-hover-dark);
+    --color-button-secondary-active: var(--color-button-secondary-active-dark);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#app-container {
+    display: flex;
+    height: 100vh;
+}
+
+#app-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#app-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    min-height: 0;
+}

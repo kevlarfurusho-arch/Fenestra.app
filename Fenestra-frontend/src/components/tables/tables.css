@@ -1,0 +1,35 @@
+table th, table td {
+    text-align: left;
+    border-left: 1px solid #ccc;
+}
+
+.tableWrapper {
+    flex: 1 1 0;
+    min-height: 0;
+    overflow-y: scroll;
+}
+
+table {
+    border-collapse:collapse;
+    width: 100%;
+}
+
+.tableWrapper thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(200, 50, 200);
+}
+
+tr:hover {
+    background-color: yellow;
+}
+
+tr {
+    height: 32px;
+}
+
+/* Table to display Bills */ 
+th.billID{
+    width: 110px;
+}

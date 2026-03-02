@@ -1,0 +1,22 @@
+#sidebar {
+    width: 200px;
+    height: 100vh;
+    background-color: var(--color-primary);
+    box-sizing: border-box;
+}
+
+aside {
+    max-width: 200px;
+}
+
+.logo {
+    text-align: center;
+    padding: 10px;
+}
+
+#logo-text {
+    font-size: xx-large;
+    font-weight: bold;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}

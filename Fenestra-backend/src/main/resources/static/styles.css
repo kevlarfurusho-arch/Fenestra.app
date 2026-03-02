@@ -1,0 +1,54 @@
+/*********************************
+*     begin core css styles      *
+*********************************/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+header, main, footer {
+    margin-left: 200px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: blanchedalmond;
+}
+
+main {
+    background-color: lightcyan;
+}
+
+footer {
+    background-color: lightgray;
+    height: 60px;
+}
+
+/*********************************
+*      end core css styles       *
+*********************************/
+#main_content {
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#output {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}

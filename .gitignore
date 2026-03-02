@@ -1,0 +1,22 @@
+# Backend
+Fenestra-backend/target/
+Fenestra-backend/src/main/resources/application-local.properties
+
+# Frontend
+Fenestra-frontend/node_modules/
+Fenestra-frontend/dist/
+Fenestra-frontend/dist-ssr/
+Fenestra-frontend/*.local
+Fenestra-frontend/README.md
+
+# logs
+logs/
+Fenestra-frontend/logs/
+Fenestra-frontend/*.log
+
+# noise
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
