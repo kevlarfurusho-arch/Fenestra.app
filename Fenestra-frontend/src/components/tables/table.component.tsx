@@ -9,7 +9,6 @@ export function Table<T> (
     const wrapperRef = useRef<HTMLDivElement>(null);
     const rowHeight = 32;
     const rowsPerScroll = 3;
-    const scrollAmount = rowHeight * rowsPerScroll;
 
     useEffect(() => {
         const wrapper = wrapperRef.current;

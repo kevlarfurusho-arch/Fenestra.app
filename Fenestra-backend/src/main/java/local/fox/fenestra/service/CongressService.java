@@ -140,7 +140,8 @@ public class CongressService {
                 b.getId().getCongress(),
                 b.getId().getBillType(),
                 b.getId().getBillNumber(),
-                b.getTitle()
+                b.getTitle(),
+                b.getUpdateDate()
             ));
     }
 
@@ -150,7 +151,8 @@ public class CongressService {
                 b.getId().getCongress(),
                 b.getId().getBillType(),
                 b.getId().getBillNumber(),
-                b.getTitle()
+                b.getTitle(),
+                b.getUpdateDate()
             ));
     }
 }
