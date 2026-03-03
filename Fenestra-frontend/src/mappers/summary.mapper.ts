@@ -17,6 +17,7 @@ export function extractBills(page: HateoasPage<Bill, typeof key>): {
 export interface billView{
     billID: string;
     title: string;
+    updateDate: string;
 }
 
 export function mapBillview(
@@ -24,6 +25,7 @@ export function mapBillview(
 ): billView {
     return {
         billID: `${bill.billType} ${bill.billNumber}`,
-        title: `${bill.title}`
+        title: `${bill.title}`,
+        updateDate: `${bill.updateDate}`
     };
 }

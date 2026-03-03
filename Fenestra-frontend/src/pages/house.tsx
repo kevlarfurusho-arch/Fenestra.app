@@ -72,7 +72,8 @@ export function House() {
     type BillRow = typeof displayBills[number]
     const billColumns: {header: string; accessor: keyof BillRow }[] = [
         { header: "Bill ID", accessor: "billID" },
-        { header: "Title", accessor: "title" }
+        { header: "Title", accessor: "title" },
+        { header: "Latest Activity", accessor: "updateDate"},
     ];
 
     return (

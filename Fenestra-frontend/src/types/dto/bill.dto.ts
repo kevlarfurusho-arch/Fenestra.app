@@ -3,6 +3,7 @@ export interface Bill {
     billNumber: number;
     billType: string;
     title: string;
+    updateDate?: string;
 }
 
 /* 
