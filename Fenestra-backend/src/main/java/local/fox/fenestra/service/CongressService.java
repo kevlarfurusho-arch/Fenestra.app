@@ -132,30 +132,6 @@ public class CongressService {
         } while (offset < totalcount);
 
         log.info("Finished Sync for congress {}. Total bills updated: {}", congress, updatedBills);
-        /* 
-        // int totalCount = Integer.MAX_VALUE;
-
-        JsonNode countCheck = congressApiService.fetchBillsPage(congress, 0, 0);
-        int totalCount = countCheck.path("pagination").path("count").asInt(); // Placeholder for total count - Gets set to count after pulling first page
-
-        while (offset < totalCount) {
-
-            JsonNode pageJson = congressApiService.fetchBillsPage(congress, offset, limit);
-
-            if (pageJson == null) {
-                throw new RuntimeException("Failed to fetch bills page");
-            }
-            ////
-            if (totalCount == Integer.MAX_VALUE) {
-                totalCount = pageJson.path("pagination").path("count").asInt();
-            }
-            ////
-
-            billSyncService.syncPage(pageJson);
-            
-            offset += limit;
-        }
-        */
     }
 
     public Page<BillSummary> getHouseBills(Pageable pageable) {
